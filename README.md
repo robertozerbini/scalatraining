@@ -1,0 +1,2 @@
+# scalatraining
+Coursera Scala Training
