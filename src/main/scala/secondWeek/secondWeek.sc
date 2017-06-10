@@ -13,3 +13,15 @@ def sumNumberTail(f: Int => Int, a: Int, b: Int): Int ={
 }
 
 sumNumberTail(x=> x*x*x, 1,10)
+
+def prime(x:Int):Boolean ={
+  def primeIter(count: Int): Boolean =
+    if( x<=0 ) false
+    else if ( count!=0 && count!=1 && x%count == 0  ) false
+    else if (count>=x || x==1) true
+    else primeIter(count+1)
+
+  primeIter(1)
+}
+
+prime(11)
